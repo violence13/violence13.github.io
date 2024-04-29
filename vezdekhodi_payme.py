@@ -111,5 +111,7 @@ async def confirm_booking_or_other_actions(booking_id):
 
         # Также можете уведомить администратора о завершении оплаты
         admin_message = f"Оплата за тур {tour_title} от пользователя {user_id} успешно получена."
-        for admin_id in ADMIN_USER_IDS:
-            await bot.send_message(admin_id, admin_message)
+        admin_id = 1111
+        await bot.send_message(admin_id, admin_message)
+
+
